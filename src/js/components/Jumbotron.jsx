@@ -2,7 +2,7 @@ import React from "react";
 
 const Jumbotron = () => {
     return (
-        <div className="card-body bg-light p-5">
+        <div className="card-body bg-light p-5 w-100">
             <h1 className="card-title mb-2">Here's some cool indies you might like</h1>
             <p className="card-text">
                 Indie games are video games created by individuals or small, 

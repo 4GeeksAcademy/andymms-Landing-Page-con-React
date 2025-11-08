@@ -10,7 +10,7 @@ import Footer from "./Footer.jsx";
 
 const gameCard = [
 	{
-		imgURL: "https://upload.wikimedia.org/wikipedia/en/thumb/0/04/Hollow_Knight_first_cover_art.webp/274px-Hollow_Knight_first_cover_art.webp.png",
+		imgURL: "https://f4.bcbits.com/img/a0907743342_10.jpg",
 		title: "Hollow Knight",
 		description: "An epic action adventure through a vast ruined kingdom of insects and heroes. Explore twisting caverns, battle tainted creatures and befriend bizarre bugs, all in a classic, hand-drawn 2D style.",
 		gameLink: "https://store.steampowered.com/app/367520/Hollow_Knight"
@@ -42,11 +42,13 @@ const Home = () => {
 			<Navbar />
 			<div className="container">
 				<Jumbotron />
-				<div className="d-flex justify-content-center flex-wrap">
-					{gameCard.map((games, index) => (
-							<Card key={index} {...games}
-							/>
-					))}
+				<div className="d-flex flex-wrap row g-4">
+				{gameCard.map((games, index) => (
+					<div class="col-12 col-md-6 col-lg-3 mb-5 justify-content-center d-flex">
+					<Card key={index} {...games}
+					/>
+					</div>
+				))}
 				</div>
 			</div>
 			<Footer />
